@@ -1,16 +1,18 @@
 <?php
 
+    include "funciones_validacion.php";
+
     $nombre_formulario = $_POST["nombre_formulario"];
     $mensaje = "";
     $campos_erroneos = "";
 
     // Dependiendo del formulario recibido validamos mediante una u otra función
-    switch($formulario) {
+    switch($nombre_formulario) {
         case "usuario":
-            $validacion = valida_usuario($_POST["nombre_usuario"], $campos_erroneos);
+            $validacion = valida_usuario($_POST["nombre_usuario"]);
             break;
         case "producto":
-            $validacion = valida_producto($_POST["nombre_producto"], $campos_erroneos);
+            $validacion = valida_producto($_POST["tipo_producto"]);
             break;
         default:
             $mensaje = "<h2>Error al recibir los datos del formulario</h2>";
@@ -28,7 +30,7 @@
     }
     else
     {
-        $mensaje = "<h2>Error al validar los siguientes datos:</h2>"
+        $mensaje = "<h2>Error al validar los datos</h2>";
     }
 
 ?>
