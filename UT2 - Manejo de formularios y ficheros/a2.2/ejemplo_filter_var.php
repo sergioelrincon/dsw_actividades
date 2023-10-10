@@ -1,13 +1,14 @@
 <?php
 
     // Probamos el uso de la función "filter_var" para validar correos electrónicos
-
+    // Definimos las variables con los datos de prueba
     $correo_ok = "micorreo@midominio.com";
     $correo_error1 = "miemail.es@dominio";
     $correo_error2 = "micorreo@dominio.com.";
     $url_ok = "http://www.ieselrincon.es";
     $url_error1 = "http://www.iessselrincon.esss..";
 
+    // Mostramos el resultado del filtrado
     echo "<br>Filtrado correo OK: ";
     var_dump(filter_var($correo_ok, FILTER_VALIDATE_EMAIL));
     echo "<br>Filtrado correo error1: ";
