@@ -1,13 +1,13 @@
 <?php
 
 // Valor que deberá estar seleccionado
-$color_seleccionado = "verde";
+$array_valores_defecto = array ("color_seleccionado" => "verde");
 
 // Inicializamos las variables a ""
 $selected_rojo = $selected_verde = $selected_azul = "";
 
 // En función del valor por defecto, seleccionamos una u otra opción
-switch ($color_seleccionado) {
+switch ($array_valores_defecto["color_seleccionado"]) {
     case "rojo":
         $selected_rojo = "selected";
         break;
