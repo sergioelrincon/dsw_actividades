@@ -15,7 +15,7 @@ function valida_producto($tipo_producto) {
  * Validamos los datos de usuario
  */
 function valida_usuario($nombre_usuario) {
-    if (strlen($nombre_usuario) > 10)
+    if (strlen($nombre_usuario) > 50)
         return false;
     else
         return true;

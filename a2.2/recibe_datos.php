@@ -25,7 +25,9 @@
         foreach ($_POST as $clave => $valor)
         {
             if ($clave !== "nombre_formulario")
-                echo "<br> - $clave: $valor";
+
+                // Invocamos a htmlspecialchars para evitar incluir código HTML o Javascript en la página de respuesta
+                echo "<br> - $clave: ". htmlspecialchars($valor);
         }
     }
     else
