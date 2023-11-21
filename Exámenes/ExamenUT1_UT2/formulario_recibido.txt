@@ -1,0 +1,21 @@
+nombre - sergio
+apellidos - ramos
+isla - Gran Canaria
+sistemaoperativo - MacOS
+dni - ./ficheros/CristobalKDC.md
+certificado - ./ficheros/lesliemendoza.md
+
+nombre - sergio
+apellidos - ramos
+isla - Gran Canaria
+sistemaoperativo - MacOS
+dni - ./ficheros/CristobalKDC.md
+certificado - ./ficheros/lesliemendoza.md
+
+nombre - 
+apellidos - ramos
+isla - Gran Canaria
+sistemaoperativo - MacOS
+dni - ./ficheros/CristobalKDC.md
+certificado - ./ficheros/lesliemendoza.md
+
