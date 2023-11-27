@@ -42,12 +42,4 @@ else
     echo "<br>Usuario o clave incorrectos";
 }
 
-/*
-// Uso seguro con PDO y sentencias preparadas
-$usuario = $_POST['usuario'];
-$stmt = $pdo->prepare("SELECT * FROM usuarios WHERE nombre_usuario = :usuario");
-$stmt->bindParam(':usuario', $usuario);
-$stmt->execute();
-*/
-
 ?>
